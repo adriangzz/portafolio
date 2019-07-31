@@ -12,11 +12,11 @@ const index = () => (
       <h3>
         I'm a front-end developer.
         <br />I love writing beautiful code.
-        <br /> My portafolio consists of a viriaity of projects including:
+        <br /> My portfolio consists of a varaity of projects including:
         <br />
-        e-commerce solutions, buisness portafolios and managmenet systems.
+        e-commerce solutions, business portfolios and management systems.
       </h3>
-      <h3>My knowladge involves around react, php, and liquid.</h3>
+      <h3>My knowledge involves around react, php, and liquid.</h3>
       <h3>Below you can find some of my work.</h3>
       <button>v</button>
     </section>
