@@ -2,6 +2,10 @@ import React from 'react';
 import Layout from '../components/Layout/Layout';
 
 import Link from 'next/link';
+import Fentexhaus from '../static/img/fentexhaus.png';
+import FentexhausW from '../static/img/web.png';
+import Patria from '../static/img/patria.png';
+import PatriaW from '../static/img/web2.png';
 
 const index = () => (
   <Layout>
@@ -18,18 +22,61 @@ const index = () => (
       </h3>
       <h3>My knowledge involves around react, php, and liquid.</h3>
       <h3>Below you can find some of my work.</h3>
-      <button>v</button>
     </section>
     <section className="work">
       <div className="workContainer">
         <article className="workSingle">
           <div className="workInfo">
-            <h1>FentexHaus</h1>
+            <h2>
+              <b>FentexHaus</b>
+            </h2>
+            <h3>
+              React + Next.js
+              <br />
+              Prismic for headless cms{' '}
+            </h3>
           </div>
           <Link href="https://fentexhaus.mx">
             <a to="Go to fentexhaus">
-              <div className="workMobile">
-                <div className="workPlaceholder" />
+              <div className="workDevices">
+                <div className="workLaptop">
+                  <img
+                    className="workPlaceholderLaptop"
+                    src={FentexhausW}
+                    alt="Fentexhaus"
+                  />{' '}
+                </div>
+                <div className="workMobile">
+                  <img
+                    className="workPlaceholder"
+                    src={Fentexhaus}
+                    alt="Fentexhaus"
+                  />
+                </div>
+              </div>
+            </a>
+          </Link>
+        </article>
+        <article className="workSingle">
+          <div className="workInfo">
+            <h2>
+              <b>Patria</b>
+            </h2>
+            <h3>Wordpress</h3>
+          </div>
+          <Link href="https://fentexhaus.mx">
+            <a to="Go to fentexhaus">
+              <div className="workDevices">
+                <div className="workLaptop">
+                  <img
+                    className="workPlaceholderLaptop"
+                    src={PatriaW}
+                    alt="Patria"
+                  />{' '}
+                </div>
+                <div className="workMobile">
+                  <img className="workPlaceholder" src={Patria} alt="Patria" />
+                </div>
               </div>
             </a>
           </Link>
