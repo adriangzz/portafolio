@@ -11,7 +11,8 @@ class Work extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false
+      arrows: false,
+      autoplay: true
     };
     return (
       <section className="work">
