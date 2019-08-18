@@ -152,7 +152,8 @@ h3 {
   font-size: 1.4rem;
 }
 
-b {
+b,
+strong {
   font-weight: 500;
 }
 
@@ -226,18 +227,18 @@ header {
 }
 
 .work {
-  padding-left: 2rem;
   position: relative;
   .workContainer {
     width: 100%;
     position: relative;
     .workSingle {
-      display: flex;
+      display: flex !important;
       flex-flow: row;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 3rem;
       .workInfo {
+        padding-left: 2rem;
         h2 {
           margin-bottom: 1rem;
         }
@@ -276,8 +277,8 @@ header {
           .workPlaceholderLaptop {
             position: absolute;
             height: 24rem;
-            width: 52.3rem;
-            right: -10.3rem;
+            width: 37.8rem;
+            right: 4.2rem;
             bottom: 5.2rem;
             object-fit: cover;
           }

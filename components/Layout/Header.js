@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Logo from '../../static/img/logo.png';
 import Available from '../../static/img/available.png';
-const Header = () => (
+const Header = props => (
   <header>
     <a href="#hero" className="logo">
       aadrian
@@ -12,7 +12,7 @@ const Header = () => (
       <Link href="mailto:adriangonzalezmontemayor@gmail.com">
         <a to="Send mail">
           <p>
-            Available for contract: <b>Available</b>
+            Available for contract: <b>{props.available}</b>
           </p>
         </a>
       </Link>
