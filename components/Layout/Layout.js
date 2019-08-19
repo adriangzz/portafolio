@@ -1,5 +1,5 @@
 import Header from './Header';
-// import Footer from './Footer';
+import Footer from './Footer';
 import Head from 'next/head';
 import '../../static/main.scss';
 
@@ -29,7 +29,7 @@ const Layout = props => (
     </Head>
     <Header available={props.available} />
     {props.children}
-    {/* <Footer /> */}
+    <Footer />
   </div>
 );
 
