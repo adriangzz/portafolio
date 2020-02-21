@@ -115,7 +115,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -123,7 +123,58 @@ table {
   border-spacing: 0;
 }
 
-h1,
+@font-face {
+  font-family: "PxGrotesk";
+  src: url("/static/fonts/PxGroteskRegular.eot");
+  src: url("/static/fonts/PxGroteskRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/static/fonts/PxGroteskRegular.svg#PxGroteskRegular") format("svg"),
+    url("/static/fonts/PxGroteskRegular.ttf") format("truetype"),
+    url("/static/fonts/PxGroteskRegular.woff") format("woff"),
+    url("/static/fonts/PxGroteskRegular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PxGrotesk";
+  src: url("/static/fonts/PxGrotesk-Bold.eot");
+  src: url("/static/fonts/PxGrotesk-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/static/fonts/PxGrotesk-Bold.svg#PxGrotesk-Bold") format("svg"),
+    url("/static/fonts/PxGrotesk-Bold.ttf") format("truetype"),
+    url("/static/fonts/PxGrotesk-Bold.woff") format("woff"),
+    url("/static/fonts/PxGrotesk-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quarto Black";
+  src: url("https://db.onlinewebfonts.com/t/42c3607f840e222a23d6da4efe15a2e8.eot"); /* IE9*/
+  src: url("https://db.onlinewebfonts.com/t/42c3607f840e222a23d6da4efe15a2e8.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("https://db.onlinewebfonts.com/t/42c3607f840e222a23d6da4efe15a2e8.woff2")
+      format("woff2"),
+    /* chrome firefox */
+      url("https://db.onlinewebfonts.com/t/42c3607f840e222a23d6da4efe15a2e8.woff")
+      format("woff"),
+    /* chrome firefox */
+      url("https://db.onlinewebfonts.com/t/42c3607f840e222a23d6da4efe15a2e8.ttf")
+      format("truetype"),
+    /* chrome firefox opera Safari, Android, iOS 4.2+*/
+      url("https://db.onlinewebfonts.com/t/42c3607f840e222a23d6da4efe15a2e8.svg#Quarto Black")
+      format("svg"); /* iOS 4.1- */
+}
+
+h1 {
+  font-family: "Quarto Black", sans-serif;
+  color: rgb(232, 230, 227);
+}
+
 h2,
 h3,
 h4,
@@ -131,8 +182,9 @@ h5,
 h6,
 p,
 a {
-  font-family: 'Fira Sans', sans-serif;
-  color: black;
+  font-family: "PxGrotesk", sans-serif;
+  color: rgb(232, 230, 227);
+  font-weight: bold;
 }
 
 a {
@@ -140,7 +192,7 @@ a {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -170,6 +222,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #181a1b;
+}
+
 @keyframes bouncing {
   0% {
     bottom: 0;
@@ -194,10 +250,12 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(100% - 4rem);
+  width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
   .logo {
     font-size: 1.3rem;
-    font-weight: 500;
   }
   .headerRow {
     display: flex;
@@ -225,7 +283,8 @@ footer {
   height: 5rem;
   border-top: solid 1px #eaeaea;
   align-items: center;
-  background-color: #fcfcfc;
+  border-top-color: rgb(55, 55, 55);
+  background-color: rgb(25, 27, 28);
   .logo {
     font-size: 1.3rem;
     font-weight: 500;
@@ -248,7 +307,10 @@ footer {
     margin-bottom: 2.5rem;
   }
   h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    line-height: 2.2rem;
+    font-size: 2rem;
+    font-weight: 500;
   }
 }
 
@@ -270,6 +332,10 @@ footer {
   }
   .slick-dots li button:before {
     font-size: 10px;
+    color: rgb(232, 230, 227);
+  }
+  .slick-dots li.slick-active button::before {
+    color: rgb(232, 230, 227);
   }
   .workContainer {
     width: 100%;
@@ -310,19 +376,20 @@ footer {
           }
         }
         .workLaptop {
-          background-image: url('/static/img/laptop.png');
-          height: 34rem;
-          width: 46rem;
+          background-image: url("/static/img/laptopW.png");
+          height: 41rem;
+          width: 55rem;
           background-size: contain;
           background-repeat: no-repeat;
           position: absolute;
-          right: -12rem;
+          right: -18rem;
+          bottom: -6.5rem;
           .workPlaceholderLaptop {
             position: absolute;
             height: 24rem;
-            width: 37.8rem;
-            right: 4.2rem;
-            bottom: 5.2rem;
+            width: 38.1rem;
+            right: 8.9rem;
+            bottom: 12.6rem;
             object-fit: cover;
           }
         }
@@ -355,7 +422,11 @@ footer {
   }
 
   .hero {
+    height: auto;
     padding-top: 7rem;
+    h3 {
+      font-size: 1.8rem;
+    }
   }
 
   .work {
@@ -368,14 +439,15 @@ footer {
           width: 100%;
           height: 22rem;
           .workLaptop {
-            height: 77.2vw;
-            width: 100%;
-            right: -6rem;
+            height: 91.2vw;
+            width: 118%;
+            right: -9rem;
+            bottom: -2.5rem;
             .workPlaceholderLaptop {
               height: 52vw;
-              width: 83vw;
-              right: 2rem;
-              bottom: 14.7vw;
+              width: 82.1vw;
+              right: 4.9rem;
+              bottom: 30.3vw;
             }
           }
           .workMobile {

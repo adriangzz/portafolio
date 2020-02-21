@@ -1,7 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
 
-import Git from '../../static/img/git.png';
+import Git from "../../static/img/gitW.png";
 
 const Header = props => (
   <header>
@@ -9,18 +8,18 @@ const Header = props => (
       aadrian
     </a>
     <div className="headerRow">
-      <Link href="https://github.com/adriangzz">
-        <a className="git" title="View Github Profile">
-          <img src={Git} alt="Git profile" />
-        </a>
-      </Link>
-      <Link href="mailto:adriangonzalezmontemayor@gmail.com">
-        <a title="Send mail">
-          <p>
-            Available for contract: <b>{props.available}</b>
-          </p>
-        </a>
-      </Link>
+      <a
+        href="https://github.com/adriangzz"
+        className="git"
+        title="View Github Profile"
+      >
+        <img src={Git} alt="Git profile" />
+      </a>
+      <a href="mailto:adriangonzalezmontemayor@gmail.com" title="Send mail">
+        <p>
+          Available for contract: <b>{props.available}</b>
+        </p>
+      </a>
     </div>
   </header>
 );

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Slider from 'react-slick';
+import React, { Component } from "react";
+import Slider from "react-slick";
 
-import Project from './Project';
+import Project from "./Project";
 
 class Work extends Component {
   render() {

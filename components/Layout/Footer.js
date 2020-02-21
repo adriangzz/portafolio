@@ -1,17 +1,18 @@
-import React from 'react';
-import Link from 'next/link';
-import Git from '../../static/img/git.png';
+import React from "react";
+import Git from "../../static/img/gitW.png";
 
 const Footer = () => (
   <footer>
     <a href="#hero" className="logo">
       aadrian
     </a>
-    <Link href="https://github.com/adriangzz">
-      <a className="git" title="View Github Profile">
-        <img src={Git} alt="Git profile" />
-      </a>
-    </Link>
+    <a
+      href="https://github.com/adriangzz"
+      className="git"
+      title="View Github Profile"
+    >
+      <img src={Git} alt="Git profile" />
+    </a>
   </footer>
 );
 

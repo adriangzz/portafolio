@@ -1,8 +1,8 @@
-import { getProjects, getHomeInfo } from '../api/index';
-import React from 'react';
-import Layout from '../components/Layout/Layout';
-import Hero from '../components/Index/Hero';
-import Work from '../components/Index/Work';
+import { getProjects, getHomeInfo } from "../api/index";
+import React from "react";
+import Layout from "../components/Layout/Layout";
+import Hero from "../components/Index/Hero";
+import Work from "../components/Index/Work";
 
 const index = props => (
   <Layout available={props.homeInfo.available}>
@@ -17,7 +17,6 @@ const index = props => (
 index.getInitialProps = async () => {
   const projectsData = await getProjects();
   const homeData = await getHomeInfo();
-  console.log(projectsData.results[0]);
   return {
     projects: projectsData.results,
     homeInfo: homeData.results[0].data
