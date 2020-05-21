@@ -14,6 +14,7 @@
     "@zeit/next-sass": "^1.0.1",
     "next": "^9.2.2",
     "next-images": "^1.1.2",
+    "next-optimized-images": "^2.5.4",
     "node-sass": "^4.13.1",
     "prismic-javascript": "^2.1.1",
     "prismic-reactjs": "^1.0.1",
