@@ -1,9 +1,8 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
-import "../../static/main.scss";
 
-const Layout = props => (
+const Layout = (props) => (
   <div>
     <Head>
       <title key="title">aadrian - portafolio</title>

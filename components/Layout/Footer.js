@@ -1,5 +1,4 @@
 import React from "react";
-import Git from "../../static/img/gitW.png";
 
 const Footer = () => (
   <footer>
@@ -11,7 +10,7 @@ const Footer = () => (
       className="git"
       title="View Github Profile"
     >
-      <img src={Git} alt="Git profile" />
+      <img src="../../static/img/gitW.png" alt="Git profile" />
     </a>
   </footer>
 );
