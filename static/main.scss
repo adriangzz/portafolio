@@ -124,34 +124,6 @@ table {
 }
 
 @font-face {
-  font-family: "PxGrotesk";
-  src: url("/static/fonts/PxGroteskRegular.eot");
-  src: url("/static/fonts/PxGroteskRegular.eot?#iefix")
-      format("embedded-opentype"),
-    url("/static/fonts/PxGroteskRegular.svg#PxGroteskRegular") format("svg"),
-    url("/static/fonts/PxGroteskRegular.ttf") format("truetype"),
-    url("/static/fonts/PxGroteskRegular.woff") format("woff"),
-    url("/static/fonts/PxGroteskRegular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PxGrotesk";
-  src: url("/static/fonts/PxGrotesk-Bold.eot");
-  src: url("/static/fonts/PxGrotesk-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("/static/fonts/PxGrotesk-Bold.svg#PxGrotesk-Bold") format("svg"),
-    url("/static/fonts/PxGrotesk-Bold.ttf") format("truetype"),
-    url("/static/fonts/PxGrotesk-Bold.woff") format("woff"),
-    url("/static/fonts/PxGrotesk-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Quarto Black";
   src: url("https://db.onlinewebfonts.com/t/42c3607f840e222a23d6da4efe15a2e8.eot"); /* IE9*/
   src: url("https://db.onlinewebfonts.com/t/42c3607f840e222a23d6da4efe15a2e8.eot?#iefix")
@@ -182,7 +154,7 @@ h5,
 h6,
 p,
 a {
-  font-family: "PxGrotesk", sans-serif;
+  font-family: "Lato", sans-serif;
   color: rgb(232, 230, 227);
   font-weight: bold;
 }
@@ -309,7 +281,7 @@ footer {
   h3 {
     margin-bottom: 2rem;
     line-height: 2.2rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
   }
 }

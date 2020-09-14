@@ -11,10 +11,10 @@
   "author": "adriangzz",
   "license": "ISC",
   "dependencies": {
-    "next": "^9.4.2",
-    "next-optimized-images": "^2.6.0",
+    "next": "^9.5.3",
+    "next-optimized-images": "^2.6.2",
     "prismic-javascript": "^2.7.1",
-    "prismic-reactjs": "^1.3.1",
+    "prismic-reactjs": "^1.3.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-slick": "^0.25.2",

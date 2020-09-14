@@ -22,6 +22,10 @@ const Layout = (props) => (
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
     </Head>
     <Header available={props.available} />
     {props.children}
