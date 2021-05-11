@@ -1,14 +1,13 @@
-import Prismic from 'prismic-javascript';
-import { PRISMIC_API_URL } from '../config';
+import Prismic from "prismic-javascript";
 
-const getProjects = async params => {
+const getProjects = async (params) => {
   try {
-    const API = await Prismic.api(PRISMIC_API_URL);
+    const API = await Prismic.api(process.env.PRISMIC_API_URL);
     const response = await API.query(
-      Prismic.Predicates.at('document.type', 'project'),
+      Prismic.Predicates.at("document.type", "project"),
       {
-        orderings: '[my.project.date]',
-        ...params
+        orderings: "[my.project.date]",
+        ...params,
       }
     );
     return response;
@@ -17,11 +16,11 @@ const getProjects = async params => {
   }
 };
 
-const getHomeInfo = async params => {
+const getHomeInfo = async (params) => {
   try {
-    const API = await Prismic.api(PRISMIC_API_URL);
+    const API = await Prismic.api(process.env.PRISMIC_API_URL);
     const response = await API.query(
-      Prismic.Predicates.at('document.type', 'home')
+      Prismic.Predicates.at("document.type", "home")
     );
     return response;
   } catch (error) {
