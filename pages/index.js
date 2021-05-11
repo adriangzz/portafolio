@@ -4,7 +4,7 @@ import Layout from "../components/Layout/Layout";
 import Hero from "../components/Index/Hero";
 import Work from "../components/Index/Work";
 
-const index = props => (
+const index = (props) => (
   <Layout available={props.homeInfo.available}>
     <Hero
       title={props.homeInfo.title}
@@ -14,13 +14,22 @@ const index = props => (
   </Layout>
 );
 
-index.getInitialProps = async () => {
+export async function getStaticProps() {
   const projectsData = await getProjects();
   const homeData = await getHomeInfo();
+
+  if (!projectsData || !homeData) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
-    projects: projectsData.results,
-    homeInfo: homeData.results[0].data
+    props: {
+      projects: projectsData.results,
+      homeInfo: homeData.results[0].data,
+    },
   };
-};
+}
 
 export default index;
