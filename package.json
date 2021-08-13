@@ -11,7 +11,7 @@
   "author": "adriangzz",
   "license": "ISC",
   "dependencies": {
-    "next": "^10.2.0",
+    "next": "^11.1.0",
     "prismic-javascript": "^3.0.2",
     "prismic-reactjs": "^1.3.2",
     "react": "^16.13.1",
