@@ -11,7 +11,7 @@ const Header = (props) => (
         className="git"
         title="View Github Profile"
       >
-        <img src="/public/static/img/git.png" alt="Git profile" />
+        <img src="/static/img/git.png" alt="Git profile" />
       </a>
       <a href="mailto:adriangonzalezmontemayor@gmail.com" title="Send mail">
         <p>

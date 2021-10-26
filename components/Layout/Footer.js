@@ -10,7 +10,7 @@ const Footer = () => (
       className="git"
       title="View Github Profile"
     >
-      <img src="../../public/static/img/gitW.png" alt="Git profile" />
+      <img src="/static/img/gitW.png" alt="Git profile" />
     </a>
   </footer>
 );

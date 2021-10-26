@@ -15,7 +15,7 @@ const Layout = (props) => (
         rel="stylesheet"
         type="text/css"
         charSet="UTF-8"
-        href="/public/static/slick.css"
+        href="/static/slick.css"
       />
       <link
         rel="stylesheet"
