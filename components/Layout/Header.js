@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = props => (
+const Header = (props) => (
   <header>
     <a href="#hero" className="logo">
       aadrian
@@ -11,7 +11,7 @@ const Header = props => (
         className="git"
         title="View Github Profile"
       >
-        <img src="/static/img/git.png" alt="Git profile" />
+        <img src="/public/static/img/git.png" alt="Git profile" />
       </a>
       <a href="mailto:adriangonzalezmontemayor@gmail.com" title="Send mail">
         <p>
