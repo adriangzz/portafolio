@@ -26,6 +26,11 @@ const Layout = (props) => (
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
         rel="stylesheet"
       />
+      <link
+        href="//db.onlinewebfonts.com/c/42c3607f840e222a23d6da4efe15a2e8?family=Quarto+Black"
+        rel="stylesheet"
+        type="text/css"
+      />
     </Head>
     <Header available={props.available} />
     {props.children}
